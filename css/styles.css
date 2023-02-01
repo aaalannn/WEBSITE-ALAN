@@ -1,0 +1,178 @@
+
+.horizontal-padding{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.vertical-padding{
+    padding-top: 25px ;
+    padding-bottom: 25px;
+}
+@media(min-width: 950px){
+    .horizontal-padding{
+        padding-left: 70px;
+        padding-right:  70px;
+    }
+    .vertical-padding{
+        padding-top:  70px ;
+        padding-bottom:  70px;
+    }
+}
+
+:root {
+    --theme-color: white;
+    --primary-color: #22b9a5;
+    --secundary-color: #000000;
+    --text-color: rgb(255, 255, 255);
+    --navbar-shallow-color: #e5e5e5;
+
+  }
+section{
+    /* hv: es ocupar 100 % en lo alto de la pagina*/
+    height:100vh;
+    margin-bottom: auto;
+    overflow: hidden;
+}
+section#alan{
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+}   
+section#habilidades{
+    background-color: var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secundary-color)
+}   
+section#projects{
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}   
+
+section#contact{
+    background-color:var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secundary-color);
+}   
+
+.proyects-lists{
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+   
+    line-height: 1.3;
+}
+
+.project-details{
+    font-size: 20px;
+    box-shadow: 0 3px 8px  rgb(112, 112, 126); 
+    border-radius: 40px;   
+    padding:0.5em 0.7em;
+    gap: 70px;
+    margin: 10px;
+    justify-content: center;
+    background-color:var(--navbar-shallow-color);
+    color: var(--secundary-color);
+    max-width: 450px;
+}
+
+.project-details img{
+    border-radius: 40px;  
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    max-width: max-content;
+}
+.project-details a{
+    justify-content: center;
+    text-align: center;
+}
+.titulo-habilidades{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.skills-lists{
+font-size: 20px;
+font-weight: 500;
+box-shadow: 0 3px 8px  rgb(112, 112, 126); 
+border-radius: 40px;   
+padding: 0.5em 0.7em;
+margin: 10px;
+justify-content: center;
+text-align: center;
+max-width: 50%;
+}
+.listasskill{
+    line-height: 1.3;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.listacontactos{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.listacontactos img:hover {
+    filter: drop-shadow(0 0 5px var(--secundary-color));
+}
+.skills-lists img{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.skills-lists figcaption{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+    justify-content: center;
+
+}
+.piepagina {
+    background-color: var(--secundary-color);
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--navbar-shallow-color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    padding-top: 0px;
+
+}
+
+section [id]{
+    scroll-margin-top: 70px;
+}

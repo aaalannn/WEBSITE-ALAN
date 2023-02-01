@@ -1,0 +1,99 @@
+.top-header{
+    box-shadow: 0 4px 5px var(rgb(38, 39, 38));
+position: fixed;
+background-color: var(--secundary-color);
+left: 0;
+top: 0;
+width: 100%;
+}
+
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color:var( --theme-color);
+    text-decoration: underline var(--primary-color);
+}
+.logotype{
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+    list-style: none;
+    color: var(--theme-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+  text-decoration: underline var(--primary-color) ;
+}
+/* el ::after sirve para poner algo despues del contenido en cuestion*/
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    padding: 0 10px;
+}
+
+.open-menu,
+.close-menu{
+    display: none;
+}
+
+@media (max-width : 950px){
+     .menu{
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: black;
+        color: wheat;
+        overflow-y: auto;
+        height: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s;
+     }
+     .menu li{
+        padding: 0;
+
+     }
+     .menu a{
+        color: aliceblue;
+        line-height: 60px;
+     }
+     
+     .open-menu,
+     .close-menu{
+        display: block;
+        border: none;
+        background-color: none;
+        cursor: pointer;
+     }
+     .close-menu{
+        cursor: pointer;
+        align-self: flex-end;
+        padding: 20px 15px;
+     }
+     .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+     }
+}
